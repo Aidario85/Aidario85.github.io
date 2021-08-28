@@ -1,0 +1,499 @@
+body{
+    font-family: Arial, sans-serif;
+}
+nav {
+    width: 100%;
+    height: 43px;
+    background: #344051;
+}
+
+.logo {
+    color: #fff;
+    font-size: 18px;
+    line-height: 43px;
+    padding-left: 270px;
+    float: left;
+}
+
+.menu {
+    float: left;
+    padding-left: 306px;
+}
+
+.menu li {
+    float: left;
+    line-height: 43px;
+    color: #fff;
+    margin-right: 28px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.main{
+    width: 100%;
+    height: calc(100% - 43px);
+    background: url(../img/BigMan.png)no-repeat 90% 100%/auto 85%, url(../img/backround1.png) center/cover no-repeat;
+}
+.title__container{
+    float: left;
+    margin: 308px 0px 0px 288px;
+    color: #2c384a;
+    text-align: center;
+}
+.title__container h1{
+    font-size: 43px;
+    font-weight: bold;
+    }
+.title__container h4{
+    margin-top: 28px;
+    font-size: 14px;
+    color: #79818d;
+    font-weight: 500;
+}
+.title__container input{
+    height: 28px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 12px;
+    padding: 0px 12px;
+    margin: 42px 10px 0px 10px;
+}
+
+
+
+
+
+.my_info h3{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 77px;
+    color: #263244;
+    text-transform: uppercase;
+    }
+.my_info>img {
+    display: block;
+    margin-top: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+.circle_photo img {
+    display: block;
+    margin: 43px auto auto auto;
+    
+}
+.my_info p{
+    font-size: 12px;
+    color: #3f495a;
+    margin: 18px 0px 40px 0px;
+    text-align: center;
+    }
+.my_info button{
+    height: 25px;
+    text-align: center;
+    border: 2px solid #6f707e;
+    background: none;
+    border-radius: 5px;
+    color: #6f707e;
+    font-size: 12px;
+    display: block;
+    margin: 0px auto 10px auto;
+    padding: 0px 13px;
+}
+
+
+
+.ability{
+    width: 100%;
+    height: 373px;
+    background: url(../img/ability.png) center/cover no-repeat;
+}
+.ability_container h3{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 90px 0px 0px 0px;
+    padding-top: 76px;
+    color: #263244;
+    text-transform: uppercase;
+}
+.ability_container>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px;
+    margin-bottom: 60px;
+}
+.ability_list{
+    padding-left: 200px;
+}
+.ability_list li{
+    float: left;
+    width: 200px;
+    text-align: center;
+    margin-right: 55px;
+}
+.ability_list h4{
+    font-size: 17px;
+    font-weight: bold;
+    color: #cf7600;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.ability_list p{
+    font-size: 12px;
+    color: #3f495a;
+    text-align: center;
+}
+.ability_list img{
+      height: 47px;
+}
+
+
+.case>h3{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 77px;
+    color: #384354;
+    text-transform: uppercase;
+    }
+.case>img{
+    display: block;
+    margin-top: 23px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.case>p{ 
+    font-size: 12px;
+    color: #3f495a;
+    margin: 32px 0px 40px 0px;
+    text-align: center;
+    }
+.case2 img{
+    height: 75%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+
+.case3 h3{
+    font-size: 15px;
+    font-weight: 600;
+    color: #384354;
+    margin: 7px 0px;
+}
+.case3 span{
+    color: #3f495a;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.case3 ul{
+    width: 1020px;
+    height: 130px;
+    margin-left: 180px;
+    margin-top: 40px;
+   
+}
+
+.case3 li{
+    float: left;
+    width: 490px;
+    }
+    
+.case input {
+    height: 33px;
+    width: 180px;
+    text-align: center;
+    border: 2px solid #63b5ae;
+    background-color: #63b5ae;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 180px;
+}
+
+
+
+
+.costs h2{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 160px;
+    color: #1c2534;
+    }
+.costs h3{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-top: 60px;
+    color: #1c2534;
+    padding-left: 270px;
+}
+
+.costs select{
+    margin:22px 0px 0px 270px;
+    padding-right: 752px;
+    background-color: #eeeeee;
+    height: 58px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #909090;
+    }
+
+
+.total{
+    margin-top: 38px;
+    margin-left: 270px;
+        
+}
+.total_1{
+    width: 892px;
+    height: 30px;
+    margin-top: 24px;
+    margin-left: 270px;
+    
+    
+    }
+.total_1>h4{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #1c2534;
+    margin-right: 830px;
+    float: left;
+    }
+.total_1>span{
+    font-size: 25px;
+    font-weight: 600;
+    color: #1c2534;
+}
+
+.total_2{
+    width: 892px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 270px;
+    
+}
+.total_2>h4{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #1c2534;
+    margin-right: 795px;
+    float: left;
+    
+    }
+.total_2>span{
+    font-size: 25px;
+    font-weight: 600;
+    color: #1c2534;
+}
+
+.stats{
+    width: 100%;
+    height: 373px;
+    background: url(../img/bg_stats.png) center/cover no-repeat;
+}
+.stats_container h3{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 90px 0px 0px 0px;
+    padding-top: 76px;
+    color: #263244;
+    text-transform: uppercase;
+}
+.stats_container>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px;
+    margin-bottom: 60px;
+}
+
+
+.stats_list{
+    padding-left: 240px;
+}
+.stats_list li{
+    float: left;
+    width: 200px;
+    text-align: center;
+    margin-right: 25px;
+}
+.stats_list h2{
+    font-size: 24px;
+    font-weight: 900;
+    color: #323e4f;
+    letter-spacing: 0.1px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.stats_list p{
+    font-size: 12px;
+    color: #323e4f;
+    text-align: center;
+    font-weight: 600;
+}
+.stats_list img{
+      height: 57px;
+}
+
+.fd h3 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 77px;
+    color: #263244;
+    text-transform: uppercase;
+    }
+.fd>img {
+    display: block;
+    margin-top: 23px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fd img {
+    display: block;
+    margin: 43px auto auto auto;
+}
+.fd p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #243042;
+    margin: 18px 0px 40px 0px;
+    text-align: center;
+    }
+
+.circle_buttons {
+    margin-bottom: 200px;
+    padding-left: 645px;
+      
+}
+.circle_buttons li{
+    float: left;
+    margin-right: 5px;
+    width: 20px;
+   }
+
+.contacts {
+    width: 100%;
+    height: 736px;
+    background: url(../img/bg_contacts.png) center/cover no-repeat;
+}
+.contacts_container h3{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 90px 0px 0px 0px;
+    padding-top: 76px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.contacts_container>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px;
+    margin-bottom: 30px;
+}
+.contacts_container p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0px 0px 40px 0px;
+    text-align: center;
+}
+
+.contacts_list {
+    padding-left: 355px;
+}
+.contacts_list li {
+    float: left;
+    width: 200px;
+    text-align: center;
+    margin-right: 25px;
+    
+}
+
+
+.contacts_list p {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 12px;
+}
+.contacts_list span {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.contacts_list img {
+      height: 27px;
+}
+
+
+.recall h3 {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 80px 0px 0px 0px;
+    padding-top: 76px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.forms {
+    margin-left: 315px;
+}
+.forms input {
+    font-size: 14px;
+    margin: 48px 25px 0px 0px;
+    height: 30px;
+    width: 350px;
+    background-color: #d2d6dc;
+    opacity:.8;
+    
+}
+.forms textarea {
+    font-size: 14px;
+    margin: 10px 25px 0px 0px;
+    height: 90px;
+    width: 730px;
+    background-color: rgba(210,214,220,.8);
+}
+.send_button input {
+    margin-left: 300px; 
+    margin: 10px 0px 0px 618px;
+    font-size: 14px;
+    height: 40px;
+    width: 100px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    
+}

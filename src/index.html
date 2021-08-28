@@ -10,6 +10,9 @@
     <meta property="og:title" content="Это моя страница">
 
     <title>Андрей Браун - Веб разрабочтик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -32,79 +35,96 @@
     <div class="main">
         <div class="title__container">
             <h1>Привет <br>Я Андрей Браун</h1>
-            <h4>Фулл стек веб-разработчик</h4>
+            <h4>Фулл стек веб-разработчик и Android - разработчик</h4>
             <input type="submit" value="Обо мне">
             <input type="submit" value="Мои работы">
 
         </div>
     </div>
-    <div>
+
+    <div class="my_info">
         <h3>ОБО МНЕ</h3>
         <img src="img/title_line.png" alt="">
         <p></p>
-        <img src="img/circle_photo.png" alt="Тут должно быть моё фото)">
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque, veritatis rerum tenetur ipsam magni beatae dolorem dolores possimus <br> dignissimos a neque quidem nulla minus voluptatibus voluptatem, odio nihil molestias ipsa assumenda quam eveniet illo modi. Assumenda, molestias.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque, veritatis rerum tenetur ipsam magni beatae dolorem dolores possimus <br> dignissimos a neque quidem nulla minus voluptatibus voluptatem, odio nihil molestias ipsa assumenda quam eveniet illo modi. Assumenda, molestias.</p>
+        <div class="circle_photo"><img src="img/circle_photo.png" alt="Тут должно быть моё фото)">
+        </div>
 
-    <button type="submit">
-        <img src="img/download_icon.png" alt="" /> Скачать резюме
-    </button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque, veritatis rerum tenetur ipsam magni beatae dolorem dolores possimus<br>dignissimos a neque quidem nulla minus voluptatibus voluptatem, odio nihil molestias ipsa assumenda quam eveniet illo modi. Assumenda, molestias.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque, veritatis rerum tenetur ipsam magni beatae dolorem dolores possimus <br> dignissimos a neque quidem nulla minus voluptatibus voluptatem, odio nihil molestias ipsa assumenda quam eveniet illo modi. Assumenda, molestias.</p>
+
+        <button type="submit">
+            <img src="img/download_icon.png" alt="" /> Скачать резюме
+        </button>
+    </div>
+
     <p></p>
 
 
-    <div>
-        <h3>ЧТО Я УМЕЮ</h3>
-        <img src="img/title_line.png" alt="">
+    <div class="ability">
+        <div class="ability_container">
+            <h3>ЧТО Я УМЕЮ</h3>
+            <img src="img/line2.png" alt="">
+        </div>
         <p></p>
+        <div class="ability_list">
+            <ul>
+                <li>
+                    <img src="img/web-design.png" alt="">
+                    <h4>Веб-Дизайн</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae earum dolores, beatae? Ducimus ipsum porro sed!</p>
+                </li>
 
-        <ul>
+                <li>
+                    <img src="img/sign.png" alt="">
+                    <h4>Разработка</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nisi saepe nam, a!</p>
+                </li>
 
-            <li>
-                <img src="img/web-design.png" alt="">
-                <h4>Веб-Дизайн</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae earum dolores, beatae? Ducimus ipsum porro sed!</p>
-            </li>
+                <li>
+                    <img src="img/rocket.png" alt="">
+                    <h4>CEO-Оптимизация</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta velit, assumenda, quaerat deleniti architecto enim rerum.</p>
+                </li>
 
-            <li>
-                <img src="img/sign.png" alt="">
-                <h4>Разработка</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nisi saepe nam, a!</p>
-            </li>
-
-            <li>
-                <img src="img/rocket.png" alt="">
-                <h4>CEO-Оптимизация</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta velit, assumenda, quaerat deleniti architecto enim rerum.</p>
-            </li>
-
-            <li>
-                <img src="img/grammofon.png" alt="">
-                <h4>Маркетинг</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aspernatur necessitatibus enim eos! Labore, necessitatibus?</p>
-            </li>
-        </ul>
+                <li>
+                    <img src="img/grammofon.png" alt="">
+                    <h4>Маркетинг</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aspernatur necessitatibus enim eos! Labore, necessitatibus?</p>
+                </li>
+            </ul>
+        </div>
     </div>
 
 
 
-    <div>
+    <div class=case>
         <h3>КЕЙСЫ</h3>
         <img src="img/title_line.png" alt="">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste optio, voluptate minus atque mollitia ex sunt quis nam dolores perferendis dolorem.</p>
-        <img src="img/site-example.png" alt="Здесь должно быть фото сайта">
-        <ul>
-            <li><h3>CLIENT</h3><small>Какая-то компания</small>
-            <li><h3>WEBSITE</h3><small>http://www.somedomain.com </small></li>
-            <li>
-            <h3>Название проекта</h3><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
-            </li>
-            <li><input type="button" value="VISIT LIVE SITE"></li>
-        </ul>
+
+        <div class="case2">
+            <img src="img/site-example.png" alt="Здесь должно быть фото сайта">
+        </div>
+
+        <div class="case3">
+            <ul>
+                <li>
+                    <h3>CLIENT</h3><span><small>Какая-то компания</small></span>
+                    <h3>WEBSITE</h3><span><small>http://www.somedomain.com </small></span>
+                </li>
+                <li>
+                    <h3>Название проекта</h3><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                </li>
+            </ul>
+
+
+            <input type="button" value="VISIT LIVE SITE">
+        </div>
+
     </div>
 
 
-    <div>
+    <div class="costs">
         <h2>Расчет стоимости</h2>
         <h3>ТИП САЙТА</h3>
         <select name="list1" id="list">
@@ -125,99 +145,120 @@
             <option value="Opt2">Опция 2</option>
         </select>
         <p></p>
-        
-                    <h4>Сроки</h4>
-             
-                    <h4>0</h4>
-               
-                    <h4>Стоимость</h4>
-                
-                    <h4>0</h4>
-                
     </div>
 
+    <div class="total">
+        <img src="img/grey_line.png" alt="">
+    </div>
 
+    <div class="total_1">
+        <h4>Сроки</h4>
+        <span>0</span>
+    </div>
 
-
-    <div>
-        <h3>НЕМНОГО СТАТИСТИКИ</h3>
-        <img src="img/title_line.png" alt="">
+    <div class="total_2">
         <p></p>
-        <ul>
-
-            <li>
-                <img src="img/smile.png" alt="">
-                <h2><big>120</big></h2>
-                <p><small>СЧАСТЛИВЫХ КЛИЕНТОВ</small></p>
-            </li>
-            <li>
-                <img src="img/sign2.png" alt="">
-                <h2><big>4,600</big></h2>
-                <p><small>ЧАСОВ РАБОТЫ</small></p>
-            </li>
-            <li>
-                <img src="img/done.png" alt="">
-                <h2><big>340</big></h2>
-                <p><small>ПРОЕКТОВ ЗАВЕРШЕНО</small></p>
-            </li>
-            <li>
-                <img src="img/cup.png" alt="">
-                <h2><big>23</big></h2>
-                <p><small>НАГРАД ПОЛУЧЕНО</small></p>
-            </li>
-        </ul>
+        <h4>Стоимость</h4>
+        <span>0</span>
     </div>
 
-    <div>
+
+
+    <div class="stats">
+        <div class="stats_container">
+            <h3>НЕМНОГО СТАТИСТИКИ</h3>
+            <img src="img/title_line.png" alt="">
+        </div>
+        <p></p>
+        <div class="stats_list">
+            <ul>
+                <li>
+                    <img src="img/smile.png" alt="">
+                    <h2><big>120</big></h2>
+                    <p><small>СЧАСТЛИВЫХ КЛИЕНТОВ</small></p>
+                </li>
+                <li>
+                    <img src="img/sign2.png" alt="">
+                    <h2><big>4,600</big></h2>
+                    <p><small>ЧАСОВ РАБОТЫ</small></p>
+                </li>
+                <li>
+                    <img src="img/done.png" alt="">
+                    <h2><big>340</big></h2>
+                    <p><small>ПРОЕКТОВ ЗАВЕРШЕНО</small></p>
+                </li>
+                <li>
+                    <img src="img/cup.png" alt="">
+                    <h2><big>23</big></h2>
+                    <p><small>НАГРАД ПОЛУЧЕНО</small></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="fd">
         <h3>ОТЗЫВЫ</h3>
         <img src="img/title_line.png" alt="">
-        <p><img src="img/face.png" alt=""></p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante <br>
-        facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
-        <p><b>Михаил</b>, Ген директор ПАО "Газпром"</p>
-    </div>
-    
-<footer>
-    <div>
-        <h3>МОИ КОНТАКТЫ</h3>
-        <img src="img/title_line.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo</p>
-        <ul>
-            <li>
-                <img src="img/geo.png" alt="">
-                <p>Санкт-Петербург</p>Невский проспект 11
-            </li>
-            <li>
-                <img src="img/convert.png" alt="">
-                <p>info@companyname.com</p>
-            </li>
-            <li>
-                <img src="img/phone.png" alt="">
-                <p>+7 999 999-99-99</p>
-            </li>
-        </ul>
-
-        <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
         <p></p>
-        <form action="#">
-            <input type="text" name="text_input" value="" placeholder="Имя">
-            <input type="text" name="text_input" value="" placeholder="Email">
-            <p></p>
-            <textarea name="name1" id="1" cols="48" rows="10" value="" placeholder="Сообщение"></textarea>
-            <p></p>
-            <input type="reset" value="Отправить">
-        </form>
+        <div class="face">
+            <img src="img/face.png" alt="">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante <br>
+            facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+        <p><b>Михаил</b>, Ген директор ПАО "Газпром"</p>
+
+        <div class="circle_buttons">
+            <ul>
+                <li><img src="img/circle_button1.png" alt=""></li>
+                <li><img src="img/circle_button2.png" alt=""></li>
+                <li><img src="img/circle_button3.png" alt=""></li>
+            </ul>
+        </div>
     </div>
-    <p></p>
-    <ul>
-        <li><img src="img/F.png" alt=""></li>
-        <li><img src="img/twitter.png" alt=""></li>
-        <li><img src="img/ball.png" alt=""></li>
-        <li><img src="img/kisa.png" alt=""></li>
-        <li><img src="img/insta.png" alt=""></li>
-        <li><img src="img/in.png" alt=""></li>
-    </ul>
-    <img src="img/map.png" alt="">
+
+    <footer>
+        <div class="contacts">
+           <div class="contacts_container">
+            <h3>МОИ КОНТАКТЫ</h3>
+            <img src="img/title_line.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo</p>
+            </div>
+            
+            <div class="contacts_list">
+            <ul>
+                <li>
+                    <img src="img/geo.png" alt="">
+                    <p>Санкт-Петербург</p><span>Невский проспект 11</span>
+                </li>
+                <li>
+                    <img src="img/convert.png" alt="">
+                    <p>info@companyname.com</p>
+                </li>
+                <li>
+                    <img src="img/phone.png" alt="">
+                    <p>+7 999 999-99-99</p>
+                </li>
+            </ul>
+</div>
+        <div class="recall">
+            <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+            <p></p>
+            <div class="forms">
+            <form action="#">
+                <input type="text" name="text_input" value="" placeholder="Имя">
+                <input type="text" name="text_input" value="" placeholder="Email">
+                <p></p>
+                <textarea name="name1" id="1" cols="48" rows="10" value="" placeholder="Сообщение"></textarea>
+            </form>
+            </div>
+            <div class="send_button">
+                <input type="reset" value="Отправить">
+            </div>
+        </div>
+        
+        <p></p>
+        <img src="img/map.png" alt="">
         <h6>Copyright 2021 Андрей Браун. Design by Web</h6>
     </footer>
 </body>
