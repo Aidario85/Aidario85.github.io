@@ -454,6 +454,9 @@ nav {
       height: 27px;
 }
 
+.recall {
+    margin-bottom: 155px;
+}
 
 .recall h3 {
     font-size: 15px;
@@ -469,6 +472,7 @@ nav {
 
 .forms {
     margin-left: 315px;
+    
 }
 .forms input {
     font-size: 14px;
@@ -477,6 +481,7 @@ nav {
     width: 350px;
     background-color: #d2d6dc;
     opacity:.8;
+    padding-left: 10px;
     
 }
 .forms textarea {
@@ -485,15 +490,26 @@ nav {
     height: 90px;
     width: 730px;
     background-color: rgba(210,214,220,.8);
+    padding: 5px 0px 0px 10px;
 }
 .send_button input {
     margin-left: 300px; 
-    margin: 10px 0px 0px 618px;
+    margin: 25px 0px 0px 618px;
     font-size: 14px;
+    font-weight: 600;
     height: 40px;
     width: 100px;
     border: 2px solid #fff;
     border-radius: 5px;
     color: #fff;
-    
+    background: none;
+}
+
+.tail h6 {
+    height: 77px;
+    background: #354051;
+    color: #fff;
+    text-align: center;
+    line-height: 77px;
+    font-size: 11px;
 }
