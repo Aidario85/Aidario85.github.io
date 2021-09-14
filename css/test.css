@@ -1,45 +1,38 @@
-body{
-    padding: 50px;
-}
-
-.box span{
-    display: block;
-    text-align: center;
-    margin-top: 90px;
-}
 .box{
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    background-color: azure;
+    margin: 250px;
+   
+    background-color: aliceblue;
     
-    animation: move 1s linear reverse infinite, bg-color 2s infinite;
+        
     
-    
-      
 }
+.row{
+    height: 1000px;
+    background-color: darkcyan;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    }
+.col{
+    background-color: chocolate;
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 200px;
+    border: 1px solid black;
+    text-align: center;
+    
+    }
 
-@keyframes move{
-    0%{
-        margin-left: 0;
-        }
-    
-    100%{
-        margin-left: 200px;
-    }
+.col1 {
 }
-.box:hover{
-    animation-play-state: paused;
+.col2 {
+
 }
-@keyframes bg-color{
-    0%{
-        background: red;
-        }
-    
-    100%{
-        background: white;
-    }
-}
-.box:hover{
-    animation-play-state: paused;
+.col3 {
+
 }
