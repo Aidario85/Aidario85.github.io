@@ -1,38 +1,15 @@
-.box{
-    margin: 250px;
-   
-    background-color: aliceblue;
-    
-        
-    
-}
-.row{
-    height: 1000px;
-    background-color: darkcyan;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    
+@media(max-width:375px){
+    .stats_blocks{
+        display: flex;
+        line-height: 60px;
+        align-items:center;
+         
     }
-.col{
-    background-color: chocolate;
-    width: 100px;
-    padding: 5px;
-    font-size: 20px;
-    line-height: 200px;
-    border: 1px solid black;
-    text-align: center;
-    
-    }
-
-.col1 {
 }
-.col2 {
 
-}
-.col3 {
-
+@media(max-width:576px){
+    .forms textarea{
+        margin-top: 5px;
+        height: 50px;
+       }
 }
