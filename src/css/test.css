@@ -1,0 +1,15 @@
+@media(max-width:375px){
+    .stats_blocks{
+        display: flex;
+        line-height: 60px;
+        align-items:center;
+         
+    }
+}
+
+@media(max-width:576px){
+    .forms textarea{
+        margin-top: 5px;
+        height: 50px;
+       }
+}

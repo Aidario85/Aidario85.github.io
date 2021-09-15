@@ -529,7 +529,7 @@ main {
 .costs_container {
     margin-top: 120px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    
+
 }
 
 .costs h2 {
@@ -548,13 +548,13 @@ main {
     font-weight: 600;
     margin-top: 60px;
     color: #102032;
-    width: 100%;
+    margin-left: 22px;
 }
 
 .costs select {
     margin-top: 22px;
-    
-    width: 100%;
+    margin-left: 22px;
+    width: 83%;
     background-color: #eeeeee;
     height: 58px;
     font-size: 16.67px;
@@ -573,6 +573,7 @@ main {
 
 .total_img {
     margin-top: 38px;
+    margin-left: 22px;
     margin-bottom: 23px;
     overflow: hidden;
 
@@ -584,7 +585,7 @@ main {
     font-weight: 700;
     letter-spacing: -1.5px;
     color: #102032;
-    
+    margin-left: 22px;
     line-height: 30px;
 
 }
