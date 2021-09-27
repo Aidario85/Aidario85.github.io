@@ -175,14 +175,6 @@ main {
     margin: 42px 10px 0px 10px;
 }
 
-.icon-guitar-custom {
-    color: red;
-    font-size: 40px;
-}
-
-
-
-
 .menu li a {
     transition: all 0.1s;
     color: white;
@@ -529,7 +521,7 @@ main {
 .costs_container {
     margin-top: 120px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    
+
 }
 
 .costs h2 {
@@ -553,7 +545,7 @@ main {
 
 .costs select {
     margin-top: 22px;
-    
+
     width: 100%;
     background-color: #eeeeee;
     height: 58px;
@@ -584,18 +576,20 @@ main {
     font-weight: 700;
     letter-spacing: -1.5px;
     color: #102032;
-    
+
     line-height: 30px;
 
 }
 
-.total_1 span {
+.total_1 p {
     font-family: 'Franklin Gothic Medium Regular', sans-serif;
-    font-size: 29.17px;
+    font-size: 26px;
     font-weight: 700;
     color: #102032;
-    padding-left: 75%;
     line-height: 30px;
+    flex-wrap: nowrap;
+    text-align: end;
+
 }
 
 .costs button {
@@ -663,31 +657,33 @@ main {
     text-align: center;
 }
 
-@media(max-width:500px){
-.stats_blocks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 20px;
-    margin-top: 20px;
-    
- }   
+@media(max-width:500px) {
+    .stats_blocks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 20px;
+        margin-top: 20px;
+
+    }
 }
-@media(max-width:500px){
+
+@media(max-width:500px) {
     .stats_list {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 }
+
 @media(max-width:500px) {
     .stats_list p {
         justify-content: center;
         align-items: center;
         margin-left: 20px;
         margin-top: 20%;
-        
-            }
+
+    }
 }
 
 .stats_list h4 {
@@ -719,6 +715,10 @@ main {
     transform: rotate(-360deg);
 }
 
+
+
+
+
 .fd {
     margin-bottom: 80px;
 }
@@ -739,6 +739,8 @@ main {
     margin-top: 31px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 70px;
+
 }
 
 .circle_photo img {
@@ -759,20 +761,31 @@ main {
 }
 
 
-.circle_buttons {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
 
+.fd .carousel-inner img {
+    padding-bottom: 350px;
+}
+
+
+.fd .carousel-inner p {
+    margin-bottom: 80px;
 
 }
 
-.circle_buttons li {
-    float: left;
-    margin-top: 10px;
-    margin-right: 5px;
-    width: 20px;
+.fd .carousel-inner {
+    width: 100%;
 }
+
+
+.carousel-indicators button {
+    border-radius: 100%;
+    height: 8px !important;
+    width: 10px !important;
+    background-color: #ec8200 !important;
+    margin-right: 15px !important;
+
+}
+
 
 .contacts {
     width: 100%;
@@ -791,10 +804,10 @@ main {
     text-transform: uppercase;
 }
 
-@media(max-width:576px){
-    .contacts_container h3{
+@media(max-width:576px) {
+    .contacts_container h3 {
         margin-top: 30px;
-         }
+    }
 }
 
 .contacts_container > img {
@@ -814,10 +827,10 @@ main {
     letter-spacing: -1.5px;
 }
 
-@media(max-width:576px){
+@media(max-width:576px) {
     .contacts_container p {
         margin-bottom: 20px;
-        }
+    }
 }
 
 .contacts_list {
@@ -870,15 +883,16 @@ main {
     padding-left: 10px;
 }
 
-@media (max-width:575px){
-    .forms input{
+@media (max-width:575px) {
+    .forms input {
         margin-top: 2px;
         height: 25px;
         width: 50%;
-        margin-left: 25%; 
+        margin-left: 25%;
     }
 }
-@media (max-width:320px){
+
+@media (max-width:320px) {
     .forms input {
         margin-top: 2px;
         height: 25px;
@@ -898,11 +912,11 @@ main {
     padding: 5px 0px 0px 10px;
 }
 
-@media(max-width:576px){
-    .forms textarea{
+@media(max-width:576px) {
+    .forms textarea {
         margin-top: 5px;
         height: 65px;
-       }
+    }
 }
 
 .send_button input {
@@ -991,3 +1005,65 @@ main {
     line-height: 77px;
     font-size: 11px;
 }
+
+#bg_popup{
+font-family: 'Franklin Gothic Medium Regular', sans-serif;
+color: #263244;
+font-size: 33px;
+    font-weight: bolder;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.8);
+display: none;
+position: fixed;
+z-index: 99999;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+}
+  
+#popup {
+background: #fff;
+width: 820px;
+height: 150px;
+margin: 15% auto;
+padding: 15px 20px 13px 20px;
+border: 2px solid #344051;
+position: relative;
+-webkit-box-shadow: 0px 0px 20px #000;
+-moz-box-shadow: 0px 0px 20px #000;
+box-shadow: 0px 0px 20px #000;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+  
+.close{
+ font-family: 'Franklin Gothic Medium Regular', sans-serif;
+color: #263244;
+font-size: 20px;
+    text-decoration: none;
+display:block;
+position:absolute;
+top:5px;
+right:5px;
+width:25px;
+height:25px;
+line-height:28px;
+color:#fff;
+background:#344051;
+cursor:pointer;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+-ms-border-radius: 15px;
+-o-border-radius: 15px;
+border-radius: 15px;
+-moz-box-shadow: 1px 1px 3px #000;
+-webkit-box-shadow: 1px 1px 3px #000;
+box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+background-color:#cf7600;
+} 
+
+
