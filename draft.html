@@ -24,70 +24,77 @@
 </head>
 
 <body>
-
-  <section class="costs">
+   
+    
+    <section class="costs sect">
         <div class="container costs_container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <h2>Расчет стоимости</h2>
-                <div class="col-10 offset-1 ">
+                <div class="col-8 ">
                     <h3>ТИП САЙТА</h3>
-                    <select name="list1" id="list">
-                        <option>Выберите пункт...</option>
-                        <option value="Opt1">Опция 1</option>
-                        <option value="Opt2">Опция 2</option>
+                    <select name="list1" id="list1">
+                        <option disabled selected>Выберите пункт...</option>
+                        <option value="1">Корпоративный сайт</option>
+                        <option value="2">Сайт-визитка</option>
+                        <option value="3">Интернет магазин</option>
                     </select>
                 </div>
-                <div class="col-10 offset-1">
+                <div class="col-8 ">
                     <h3>ДИЗАЙН</h3>
-                    <select name="list1" id="list">
-                        <option>Выберите пункт...</option>
-                        <option value="Opt1">Опция 1</option>
-                        <option value="Opt2">Опция 2</option>
+                    <select name="list2" id="list2">
+                        <option disabled selected>Выберите пункт...</option>
+                        <option value="1">Шаблонный</option>
+                        <option value="2">Уникальный</option>
+                        <option value="3">Сверхдекорированный</option>
                     </select>
                 </div>
-                <div class="col-10 offset-1">
+                <div class="col-8">
                     <h3>АДАПТИВНОСТЬ</h3>
-                    <select name="list1" id="list">
-                        <option>Выберите пункт...</option>
-                        <option value="Opt1">Опция 1</option>
-                        <option value="Opt2">Опция 2</option>
+                    <select name="list3" id="list3">
+                        <option disabled selected>Выберите пункт...</option>
+                        <option value="1">Не адаптиынй</option>
+                        <option value="2">Адаптивный</option>
+                        <option value="3">Адаптивный + мобильные устройства</option>
                     </select>
                 </div>
 
 
-                <div class="col-xxl-10 col-xl-8 offset-1 col-md-8">
+                <div class="col-8">
                     <div class="total_img">
                         <img src="img/grey_line.png" alt="">
                     </div>
                 </div>
 
 
-                <div class="row total_1">
-                    <div class="col-7 offset-1">
+                <div class="row total_1 justify-content-center">
+                    <div class="col-6">
                         <h4>Сроки</h4>
                     </div>
                     <div class="col-2">
-                        <span>0</span>
+                        <p id="dueDate">0</p>
                     </div>
-                    <div class="col-7 offset-1">
+                    <div class="col-6">
                         <h4>Стоимость</h4>
                     </div>
                     <div class="col-2">
-                        <span>0</span>
+                        <p id="totalPrice">0</p>
                     </div>
                 </div>
 
-                <div class="col d-flex align-items-center justify-content-center"><button type="button" value=""> Оставить заявку
-                    </button></div>
+                <div class="col d-flex align-items-center justify-content-center"><button type="button" value="" id="button"> Расчитать</button></div>
             </div>
         </div>
     </section>
+
     
-   <div class="col-xxl-10 col-xl-8 offset-xxl-1 offset-lg-1 offset-md-1  col-md-8">
-                    <div class="total_img">
-                        <img src="img/grey_line.png" alt="">
-                    </div>
-                </div>
+
+      
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/draftScript.js"></script>
+
 </body>
 
 </html>

@@ -1,214 +1,77 @@
 "use strict"
 
-let type_select;
 
-do {
-  type_select = prompt("УКАЖИТЕ ЦИФРОЙ ТРЕБУЕМЫЙ ТИП САЙТА: 1 - Корпоративный сайт; 2 - Сайт-визитка; 3 - Интернет магазин", 0);
-} while (type_select > 3);
- console.log(type_select);
-
-
-
-function siteType(type_select, varOne, varTwo, varThree, varNo) {
-    if (type_select == 1){
-    varOne ()
-        
+$('#button').click(function(){
+	var value = $('#list1').val();
+    var value2 = $('#list2').val();
+    var value3 = $('#list3').val();
+    
+    let totalDue
+    let totalDue2
+    let totalDue3
+    
+    let totalSum
+    let totalSum2
+    let totalSum3
+    
+    if (value == 1){
+    totalDue = 10;
+    totalSum = 100;    
+    }
+    else if (value == 2) {
+        totalDue = 20;
+        totalSum = 200;   
         }
-         else if (type_select == 2){
-    varTwo ();
-             }  
-          else if (type_select == 3){
-                varThree ();
-}
-else{
-    varNo();
-}}
-
-function varBir(){
-    console.log("Выбран Корпоративный сайт");
-    let cost = 5000;
-    alert( "Выбран Корпоративный сайт" + " стоимостью " + cost + " рублей");
-   
-}
-function varEki(){
-    console.log("Выбран Сайт-визитка");
-    let cost = 3000;
-    alert( "Выбран Сайт-визитка" + " стоимостью " + cost + " рублей");
-}
-function varUsh(){
-    console.log("Выбран Интернет-магазин");
-    let cost = 6000;
-    alert( "Выбран Интернет-магазин" + " стоимостью " + cost + " рублей");
-}
-    function varJok(){
-    console.log("Не выбран тип сайта");
-}
-siteType(type_select, varBir, varEki, varUsh, varJok);
-
-let typePrice;
-let typeDue;
-
- if (type_select == 1){
-    typePrice = 5000;
-    typeDue = 10;    
+    else if (value == 3) {
+        totalDue = 30;
+        totalSum = 300;   
         }
-         else if (type_select == 2){
-    typePrice = 3000;
-    typeDue = 12;
-             }  
-          else if (type_select == 3){
-          typePrice = 6000;
-          typeDue = 15;
+    
+    else {
+        totalDue = 0; 
+        totalSum = 0;
           }
-
-console.log (typePrice);
-
-/////////////////////////////////////////////////
-
-let design_select;
-
-do {
-  design_select = prompt("УКАЖИТЕ ЦИФРОЙ ТРЕБУЕМЫЙ ДИЗАЙН САЙТА: 1 - Шаблонный; 2 - Уникальный; 3 - Сверхдекорированный", 0);
-} while (design_select > 3);
- console.log(design_select);
-
-
-
-function siteDesign(design_select, varOne, varTwo, varThree, varNo) {
-    if (design_select == 1){
-    varOne ()
-        
+    
+ ///////////////////////////////////////////   
+    if (value2 == 1){
+    totalDue2 = 10;
+    totalSum2 = 100;
+    }
+    
+     else if (value2 == 2) {
+        totalDue2 = 20;
+        totalSum2 = 200;   
         }
-         else if (design_select == 2){
-    varTwo ();
-             }  
-          else if (design_select == 3){
-                varThree ();
-}
-else{
-    varNo();
-}}
-
-function varUno(){
-    console.log("Выбран Шаблонный дизайн");
-    let cost = 10000;
-    alert( "Выбран Шаблонный дизайн" + " стоимостью " + cost + " рублей");
-   
-}
-function varDos(){
-    console.log("Выбран Уникальный дизайн");
-    let cost = 20000;
-    alert( "Выбран Уникальный дизайн" + " стоимостью " + cost + " рублей");
-}
-function varTres(){
-    console.log("Выбран Сверхдекорированный дизайн");
-    let cost = 30000;
-    alert( "Выбран Сверхдекорированный дизайн" + " стоимостью " + cost + " рублей");
-}
-    function varNona(){
-    console.log("Не выбран дизайн сайта");
-}
-siteDesign(design_select, varUno, varDos, varTres, varNona);
-
-let designPrice;
-let designDue;
-
- if (design_select == 1){
-    designPrice = 10000;
-    designDue = 5;
-        
+    else if (value2 == 3) {
+        totalDue2 = 30;
+        totalSum2 = 300;   
         }
-         else if (design_select == 2){
-    designPrice = 20000;
-    designDue = 8;
-             }  
-          else if (design_select == 3){
-    designPrice = 30000;
-    designDue = 15;       
+    else {
+        totalDue2 = 0;
+        totalSum2 = 0;
           }
-
-console.log (designPrice);
-
-///////////////////////////////////////////////////////////
-
-let adapt_select;
-
-do {
-  adapt_select = prompt("УКАЖИТЕ ЦИФРОЙ ТРЕБУЕМУЮ АДАПТИВНОСТЬ САЙТА: 1-Не адаптиынй; 2-Адаптивный; 3-Адаптивный+мобильные устройства", 0);
-} while (adapt_select > 3);
- console.log(adapt_select);
-
-
-
-function siteAdapt(adapt_select, varOne, varTwo, varThree, varNo) {
-    if (adapt_select == 1){
-    varOne ()
-        
+///////////////////////////////////////////  
+      if (value3 == 1){
+        totalDue3 = 10;
+        totalSum3 = 100;
+           }
+    
+     else if (value3 == 2) {
+        totalDue3 = 20;
+        totalSum3 = 200;   
         }
-         else if (adapt_select == 2){
-    varTwo ();
-             }  
-          else if (adapt_select == 3){
-                varThree ();
-}
-else{
-    varNo();
-}}
-
-function varIch(){
-    console.log("Выбран Не адаптиынй");
-    let cost = 100;
-    alert( "Выбран Не адаптиынй" + " стоимостью " + cost + " рублей");
-   
-}
-function varNi(){
-    console.log("Выбран Адаптивный");
-    let cost = 2000;
-    alert( "Выбран Адаптивный" + " стоимостью " + cost + " рублей");
-}
-function varSan(){
-    console.log("Выбран Адаптивный+мобильные устройства");
-    let cost = 3000;
-    alert( "Выбран Адаптивный+мобильные устройства" + " стоимостью " + cost + " рублей");
-}
-    function varHach(){
-    console.log("Не выбрана адаптивность сайта");
-}
-siteAdapt(adapt_select, varIch, varNi, varSan, varHach);
-
-let adaptPrice;
-
-let adaptDue;
-
- if (adapt_select == 1){
-    adaptPrice = 100;
-    adaptDue = 1;    
+    else if (value3 == 3) {
+        totalDue3 = 30;
+        totalSum3 = 300;   
         }
-         else if (adapt_select == 2){
-    adaptPrice = 2000;
-    adaptDue = 2;         
-             }  
-          else if (adapt_select == 3){
-                adaptPrice = 3000;
-              adaptDue = 3;
-          
+          else {
+            totalDue3 = 0; 
+            totalSum3 = 0;
           }
-
-console.log (adaptPrice);
-////////////////////////////////////////////////////////
-
-
-let totalSum = (typePrice + designPrice + adaptPrice);
-let totalDue = (adaptDue + designDue + typeDue);
-
-let priceTotal = confirm ("Стоимость Вашего сайта будет составлять  " + totalSum + " рублей " + ", срок выполнения " + totalDue + " (дня)дней");
-
-
-$('#dueDate').text(totalDue + " дн.");
-$('#totalPrice').text(totalSum + " руб.");
-
-
-
+     
+	$('#dueDate').html(totalDue + totalDue2 + totalDue3 + " дн.");
+    $('#totalPrice').html(totalSum + totalSum2 + totalSum3 + " руб.");
+});
 
 
 

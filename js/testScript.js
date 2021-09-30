@@ -1,5 +1,21 @@
 "use strict"
 $(document).ready(function(){
+//////////////////////////////////////Урок 13    
+     
+    new WOW().init();
+    $("#inputTel").mask("+7(999) 999-99-99");
+    
+    $('form').submit(function(){
+        
+        if ($("#inputTel").val() == ""|| $("#inputEmail3").val() == ""){
+            alert("Введите телефон");
+        }
+    });
+    
+   ///////////////////////////////////////////////////////////// 
+
+    
+////////////////////////////////////// конец Урока 13    
     //working!
     /*
         let options = {threshold:[0.5]};
@@ -53,7 +69,8 @@ $({numberValue: currentNumber}).animate({numberValue: 120}, {
     
     
     /////////////////////////////////////////////////
-   let optionTwo = {threshold:[0.5]};
+//    working! 
+  /* let optionTwo = {threshold:[0.5]};
     let observerTwo = new IntersectionObserver(onEntryTwo, optionTwo);
     let elementTwo = $('.numberEki');
     elementTwo.each((i, el) => {
@@ -81,7 +98,7 @@ $({numberValue: currentNumberTwo}).animate({numberValue: 4600}, {
       
       
     }
-
+*/
 //////////////////////////////////////////////////////////////////////////
 /* 
 //not working
@@ -102,7 +119,7 @@ $(window).scroll(() => {
 });
 */
 ////////////////////////////////////////////////////////////////////////
-});
+
 
 /* let options = {threshold:[0.5]};
     let observer = new IntersectionObserver(onEntry, options);
@@ -140,4 +157,6 @@ $(window).scroll(() => {
     
  $('.image-link').magnificPopup({type:'image'});
 });*/
-  
+    
+    
+  });   //document close

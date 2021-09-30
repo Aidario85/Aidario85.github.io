@@ -1,20 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>JavaScript</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/test.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-</head>
-<body>
-   
-<script src="js/myScript.js">
-    
-        
-    </script>
 
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main py-5">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="animate__animated animate__bounce">Урок 12 </h1>
+            </div>
+        </div>
+        
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary d-block mx-auto mb-10" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+       <form action="php/mail.php" metod ="post">
+        
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" name="user_email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPhone3" class="col-sm-2 col-form-label">Телефон</label>
+    <div class="col-sm-10">
+      <input type="phone" name="user_phone" class="form-control" id="inputTel">
+    </div>
+  </div>
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-6 pt-0">Вы первый раз на этом сайте?</legend>
+    <div class="col-sm-6">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="radios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Да
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="radios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Нет
+        </label>
+      </div>
+      
+    </div>
+  </fieldset>
+  <div class="row mb-3">
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" name="check" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Пользовательское соглашение
+        </label>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        </div>
+    </div>
+  </div>
+</div>
+        <section class="home section" id="home">
+            <div class="row mt-5">
+                <div class="col">
+
+                    <h3 class="weight text-center">Home</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="features section" id="features">
+            <div class="row mt-5">
+                <div class="col">
+                    <h3 class="weight text-center wow animate__animated animate__rubberBand" data-wow-delay="2s">Features</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing section" id="pricing">
+            <div class="row mt-5">
+                <div class="col">
+                    <h3 class="weight text-center">Pricing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex debitis assumenda, nemo fuga officiis ab repellat. Voluptatem natus officiis reprehenderit enim. Iusto veritatis laudantium ullam sint reiciendis corrupti porro?</p>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="col px-3">
+                    
+                    <p id="bigP" class="element-animation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis autem placeat iusto quisquam natus ducimus ipsa at corporis maiores consequatur. ipsum dolor sit amet, consectetur adipisicing elit. Vero repellendus rem temporibus natus, doloremque harum mollitia velit fugiat nostrum quos dicta quidem nemo eius ut tenetur beatae minima est saepe voluptate incidunt inventore! Dolorum vel reprehenderit, praesentium nam perspiciatis tempora aliquam iure assumenda doloribus veniam eum sed totam, consequatur, dolor.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"><h2>Контакты</h2>
+                <p>Ул.Сантьяго-де-Куба</p>
+                <p>тел: +7 999 99 99</p>
+                </div><div class="col-10"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3fb0270386594d4df832cb1d6abf8ac797590a74a583944f825e17ad289551ae&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script></div>
+            </div>
+           
+        </div>
+
+<!--   <div class="row mt-5">-->
+<!--            <div class="col">-->
+<!--                <img data-target="123" class="img-fluid d-block mx-auto image-link" src="img/wood.jpg" href="img/wood.jpg" data src="" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+    
+    
+
+<img src="img/site-example.png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+          <div class="modal-body-fullscreen">
+        <img src="img/site-example.png" alt="">
+      </div>
+      
+    </div>
+  </div>
+
+   
+   
+    
+<section class="stats section">
+        <div class="container">
+            <div class="row">
+                <div class="stats_container">
+                    <h3>НЕМНОГО СТАТИСТИКИ</h3>
+                    <img src="img/line2.png" alt="">
+                </div>
+                <p></p>
+                <div class="col-12">
+                    <div class="stats_list ">
+                        <div class="col-3 stats_blocks">
+                            <img src="img/smile.png" alt="">
+                            <h4 class="numberBir">0</h4>
+                            <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+                        </div>
+                        <div class="col-3 stats_blocks">
+                           <img src="img/sign2.png" alt="">
+                            <h4 class="numberEki">0</h4>
+                            <p>ЧАСОВ РАБОТЫ</p>
+                        </div>
+
+                        <div class="col-3 stats_blocks">
+                           <img src="img/done.png" alt="">
+                            <h4 class="numberUsh">0</h4>
+                            <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+                        </div>
+                        <div class="col-3 stats_blocks">
+                            <img src="img/cup.png" alt="">
+                            <h4 class="numberTort">0</h4>
+                            <p>НАГРАД ПОЛУЧЕНО</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   <div id="bg_popup">
+  <div id="popup">
+<h1>Если Вы оставите заявку сейчас, я предоставлю Вам скидку в размере 25%!!!</h1>
+
+<a class="close" href="#" title="Закрыть" onclick="document.getElementById('bg_popup').style.display='none'; return false;"> X</a>
+</div>
+</div>  
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/testScript.js"></script>
+<!--    
+<script type="text/javascript">
+    var delay_popup = 2000;
+    setTimeout("document.getElementById('bg_popup').style.display='block'", delay_popup);
+</script>  -->
 
 </body>
+
 </html>
