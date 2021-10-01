@@ -3,6 +3,8 @@ $(document).ready(function(){
 //////////////////////////////////////Урок 13    
      
     new WOW().init();
+    
+    
     $("#inputTel").mask("+7(999) 999-99-99");
     
     $('form').submit(function(){
