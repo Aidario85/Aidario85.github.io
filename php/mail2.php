@@ -4,10 +4,9 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$email = $_POST['user_email'];
-$phone = $_POST['user_phone'];
-$radio = $_POST['radios'];
-$check = $_POST['check'];
+$name = $_POST['name_input2'];
+$email = $_POST['user_email2'];
+$text = $_POST['text_input2'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -29,12 +28,12 @@ $mail->addAddress('liquid94@mail.ru');     // Кому будет уходить
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Тема письма';
-$mail->Body    = '' . "Скрипт сработал с POST! <br>". $email . " <br>" . $phone . " <br>" . $radio . " <br>" . $check;
+$mail->Subject = 'Обратная связь с футера сайта';
+$mail->Body    = '' . "Скрипт сработал с POST! <br>". $name. " <br>" . $email. " <br>" . $text;
 
 if(!$mail->send()) {
     return false;
 } else {
     return true;
-    }
+}
 ?>

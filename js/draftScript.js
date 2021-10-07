@@ -1,6 +1,8 @@
 "use strict"
 
-
+    
+new WOW().init();
+    
 
 $('#button').click(function(){
 	var value = $('#list1').val();
@@ -75,3 +77,142 @@ $('#button').click(function(){
 });
 
 
+
+////////////////////////////////////////////////////////////////////////////
+ let options = {threshold:[0.5]};
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = $('.numberBir');
+    elements.each((i, el) => {
+        observer.observe(el);
+    });
+   
+  function onEntry (entry){
+    entry.forEach(change => {
+        if (change.isIntersecting){
+            change.target.classList.add('numberOne');
+       } 
+    });
+ 
+var currentNumber = $('.numberOne').text();
+
+$({numberValue: currentNumber}).animate({numberValue: 120}, {
+    duration: 2000,
+    easing: 'linear',
+    step: function() { 
+        $('.numberOne').text(Math.ceil(this.numberValue)); 
+    }
+});
+    }
+    /////////////////////////////////////////////////
+   let optionTwo = {threshold:[0.5]};
+    let observerTwo = new IntersectionObserver(onEntryTwo, optionTwo);
+    let elementTwo = $('.numberEki');
+    elementTwo.each((i, el) => {
+        observerTwo.observe(el);
+    });
+   
+  function onEntryTwo (entry){
+    entry.forEach(change => {
+        if (change.isIntersecting){
+            change.target.classList.add('numberTwo');
+        } 
+    });
+
+var currentNumberTwo = $('.numberTwo').text();
+
+$({numberValue: currentNumberTwo}).animate({numberValue: 4600}, {
+    duration: 8000,
+    easing: 'linear',
+    step: function() { 
+        $('.numberTwo').text(Math.floor(this.numberValue)); 
+    }
+});
+    }
+///////////////////////////////////////////////////////
+  let optionThree = {threshold:[0.5]};
+    let observerThree = new IntersectionObserver(onEntryThree, optionThree);
+    let elementThree = $('.numberUsh');
+    elementThree.each((i, el) => {
+        observerThree.observe(el);
+    });
+   
+  function onEntryThree (entry){
+    entry.forEach(change => {
+        if (change.isIntersecting){
+            change.target.classList.add('numberThree');
+        } 
+    });
+ 
+var currentNumberThree= $('.numberThree').text();
+
+$({numberValue: currentNumberThree}).animate({numberValue: 341}, {
+    duration: 3000,
+    easing: 'linear',
+    step: function() { 
+        $('.numberThree').text(Math.floor(this.numberValue)); 
+    }
+});
+}
+///////////////////////////////////////////////////////
+  let optionFour = {threshold:[0.5]};
+    let observerFour = new IntersectionObserver(onEntryFour, optionFour);
+    let elementFour = $('.numberTort');
+    elementFour.each((i, el) => {
+        observerFour.observe(el);
+    });
+   
+  function onEntryFour(entry){
+    entry.forEach(change => {
+        if (change.isIntersecting){
+            change.target.classList.add('numberFour');
+        } 
+    });
+
+var currentNumberFour= $('.numberFour').text();
+
+$({numberValue: currentNumberFour}).animate({numberValue: 24}, {
+    duration: 6000,
+    easing: 'linear',
+    step: function() { 
+        $('.numberFour').text(Math.floor(this.numberValue)); 
+    }
+});
+ 
+    }
+
+////////////////////////////////////////////////////////////////////////
+
+
+
+ $(window).scroll(() => {
+    let scrollDistance = $(window).scrollTop();
+    
+    $(".sect").each((i, el) => {
+        
+        if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
+            $("nav a").each((i, el) => {
+                if ($(el).hasClass("active")){
+                    $(el).removeClass("active");
+                }
+            });
+            $('nav li:eq('+ i +')').find('a').addClass('active');
+        }
+    });
+});
+
+//////////////////////////////////////////////////////
+
+    $('a[href^="#"]').click(function () {
+            let valHref = $(this).attr("href");
+            $('html, body').animate({
+                scrollTop: $(valHref).offset().top - 43 + "px"
+            });
+        })
+/////////////////////////////////////////////////
+ var delay_popup = 8000;
+    setTimeout("document.getElementById('bg_popup').style.display='block'", delay_popup);
+
+////////////////////////////////////////////////////
+ $("#inputTel").mask("+7(999) 999-99-99");
+    
+    

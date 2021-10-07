@@ -209,15 +209,23 @@ $({numberValue: currentNumberFour}).animate({numberValue: 24}, {
             });
         })
 /////////////////////////////////////////////////
- var delay_popup = 8000;
+var delay_popup = 5000;
     setTimeout("document.getElementById('bg_popup').style.display='block'", delay_popup);
 
 ////////////////////////////////////////////////////
  $("#inputTel").mask("+7(999) 999-99-99");
-    
-    $('form').submit(function(){
-        
-        if ($("#inputTel").val() == ""|| $("#inputEmail3").val() == ""){
-            alert("Введите телефон");
-        }
+////////////////////////////////////////////////////    
+$('form').submit(function(event){
+    event.preventDefault();
+    $.ajax({
+        type:"POST",
+        url:"php/mail.php",
+        data: $(this).serialize()
+    }).done(function(){
+        $(this).find("input").val("");
+        alert("Данные успешно отправлены");
+        $("form").trigger("reset");
     });
+    return false;
+});
+////////////////////////////////////////////////////
